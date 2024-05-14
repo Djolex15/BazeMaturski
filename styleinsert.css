@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+    --red-heart:#e53e3e;
+}
+*
+{
+ margin:0;
+ padding:0;
+}
+body
+{
+ background:#f9f9f9;
+ font-family:"Courier New", Courier, monospace;
+}
+#navbar {
+    background-color: #d42607;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+
+#navbar #header {
+    float: left;
+    padding: 14px 16px;
+    color: white;
+}
+
+#navbar #buttons {
+    float: right;
+}
+
+#header {
+    font-size: 30px;
+}
+
+#user-info {
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+#user-info p{
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+button {
+    background-color: #d42607;
+    border: 1px solid black;
+    color: white;
+    padding: 14px 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+#navbar #buttons button:hover {
+    background-color: #bd2207;
+}
+#body
+{
+ margin-top:50px;
+}
+table
+{
+ width:30%;
+ font-family:Tahoma, Geneva, sans-serif;
+ font-weight:bolder;
+ color:#999;
+ margin-bottom:80px;
+}
+table a
+{
+ text-decoration:none;
+ color:#d42607;
+}
+table,td,th
+{
+ border-collapse:collapse;
+ border:solid #d0d0d0 1px;
+ padding:20px;
+ 
+ text-align: center;
+}
+table td input
+{
+ width:97%;
+ height:35px;
+ border:dashed #d42607 1px;
+ padding-left:15px;
+ font-family:Verdana, Geneva, sans-serif;
+ box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td input:focus
+{
+ box-shadow:inset 1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td button
+{
+ border:solid #f9f9f9 0px;
+ box-shadow:1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+ background:#d42607;
+ padding:9px 15px 9px 15px;
+ color:#f9f9f9;
+ font-family:Arial, Helvetica, sans-serif;
+ border-radius:3px;
+ width:25%;
+ display: block;
+ margin: 0 auto;
+ margin-bottom: 10px;
+}
+
+table td input:hover
+{
+    border:solid #d42607 1px;
+}
+
+table td button:hover
+{
+    background-color: #bd2207;
+}
+
+table td img
+{
+    width: 50px;
+    height: 50px;
+}
+
+table td button:active
+{
+ position:relative;
+ top:1px;
+}
+select {
+    width:98%;
+    height:35px;
+    border:dashed #d42607 1px;
+    padding-left:15px;
+    font-family:Verdana, Geneva, sans-serif;
+    box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+    outline:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23000000'%3E%3Cpath d='M14.5 7.5L10 12 5.5 7.5h9z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+select option {
+    padding: 10px;
+}
+
+option.team-color {
+    padding: 10px;
+    border: 2px solid #000;
+    filter: brightness(65%);
+}
+
+option.mercedes {
+    background-color: #00d2be;
+    color: #fff;
+}
+
+option.red-bull {
+    background-color: #1e41ff;
+    color: #fff;
+}
+
+option.mclaren {
+    background-color: #ff8700;
+    color: #fff;
+}
+
+option.ferrari {
+    background-color: #dc0000;
+    color: #fff;
+}
+
+option.aston-martin {
+    background-color: #006f62;
+    color: #fff;
+}
+
+option.alpine {
+    background-color: #0090ff;
+    color: #fff;
+}
+
+option.alpha-tauri {
+    background-color: #2b4562;
+    color: #fff;
+}
+
+option.alfa-romeo {
+    background-color: #900000;
+    color: #fff;
+}
+
+option.haas {
+    background-color: #ffffff;
+    color: #000;
+}
+
+option.williams {
+    background-color: #005aff;
+    color: #fff;
+}
+
+option:hover {
+    filter: brightness(100%);
+    background-color: #bbbb;
+}
+
+#formid input {
+    width: 20%;
+    height: 35px;
+    border: dashed #d42607 1px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, sans-serif;
+    box-shadow: 0px 0px 0px rgba(1, 0, 0, 0.2);
+    outline: none;
+    margin-top: 30px;
+}
+
+#formid input:focus {
+    box-shadow: inset 1px 1px 1px rgba(1, 0, 0, 0.2);
+    outline: none;
+}
+
+#formid input:hover {
+    border: solid #d42607 1px;
+}
+
+#tableid{
+    margin-top: 20px;
+    width: 20%;
+}
+
+th:hover, td:hover
+{
+    color: #d42607;
+}
+
+.footer {
+    margin-top: 30px;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.footer-content p {
+    margin: 0;
+    font-size: 1.2rem; /* Set the font size to match the heart icon */
+}
+
+
+.social-media-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-links li {
+    display: inline-block;
+}
+
+.social-media-links li:last-child {
+    margin-right: 0;
+}
+
+.social-media-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px; /* Adjust the icon size */
+}
+.social-media-links li img {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+
+.red-heart{
+    fill: var(--red-heart);
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+.Djolex {
+    text-decoration: underline;
+    color: orange;
+}
+
+.Djolex:hover{
+    color: #FF7F00;
+}
